@@ -9,3 +9,4 @@
   printf("max is %.2f",fmax(a,fmax(b,c)));
   return 0;
 }
+
