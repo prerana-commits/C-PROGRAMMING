@@ -1,13 +1,16 @@
 #include<stdio.h>
  int main()
 {
-  float amt,da,hra;
-  printf("Enter the total HRA:");
-  scanf("%d",&da);
-  printf("Enter the total da:");
-  scnaf("%d");
-  ts*amt*(da+hra)
+  float amt,da,hra,totalsalary;
+  printf("Enter the Basic salary : ");
+  scanf("%f" , &amt);
 
+  printf("Enter the DA:");
+  scanf("%f" , &hra);
 
+  totalsalary = amt + da + hra ;
+
+  printf("Total salary = %.2f\n" , totalsalary);
+  
   return 0;
 }
