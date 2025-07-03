@@ -1,12 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-  int a[100], i, n, key, cnt = 0;
-  printf("How many elements you want to enter");
+  FILE *fp;
+  char data[100];
+  int a[100], n, i, key, cnt = 0;
+  fp = fopen("number.txt", "r");
+  printf("Enter a N : ");
   scanf("%d", &n);
-  printf("enter elements");
+
   for (i = 0; i < n; i++)
-    scanf("%d", &a[i]);
+  {
+    fscanf(fp, "%d", &a[i]);
+    printf("%d ", a[i]);
+  }
   printf("Enter element for occurance");
   scanf("%d", &key);
 
